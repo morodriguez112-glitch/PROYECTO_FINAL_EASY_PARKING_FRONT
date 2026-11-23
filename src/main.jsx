@@ -1,5 +1,7 @@
 /*
-Acá toma mi aplicación de React y la monta dentro del navegador
+Acá toma mi aplicación de React y la monta dentro del navegador.
+
+Recordar que main.jsx, carga a app.jsx
  */
 
 import { StrictMode } from 'react'

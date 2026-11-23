@@ -12,16 +12,18 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 
-import './App.css'
+
 // Importamos el componente Form desde la carpeta de Usuarios
 import Form from "./Usuarios/Form.jsx";
+import List from "./Usuarios/List.jsx";
 function App() {
   return (
       <div>
-        {/* Esta etiqueta <Form /> es la unica q se coloca y solo indica que en la pantalla se mostrará el formulario al usuario */}
-        <Form />
+        {/* Esta etiqueta <Form /> es la unica q se coloca y solo indica que en la pantalla se mostrará el formulario al usuario, así es la
+         formula para ensayar y ver en el navegador*/}
+        <List/>
       </div>
   );
-
 }
+
 export default App;

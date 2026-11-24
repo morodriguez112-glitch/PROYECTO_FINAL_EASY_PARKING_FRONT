@@ -102,9 +102,10 @@ function Form() {
                             </td>
                         </tr>
                         <tr>
-                            {/* En JSX "colspan" se escribe en camelCase: colSpan */}
-                            <td colSpan="2">
-                                <button type="submit">
+                            <td className="flex items-center gap-2">
+                                <button
+                                    type="button"
+                                    className="rounded bg-[#1D4526] px-2.5 py-1 text-xs font-semibold text-white hover:bg-[#a7c957] cursor-pointer">
                                     Guardar
                                 </button>
                             </td>
@@ -114,7 +115,13 @@ function Form() {
                 </form>
 
                 <br /> {/* recodar esto "salto de línea" */}
-                <a href="#/usuarios">Volver a la Lista de Usuarios</a>
+
+                {/* RECODATORIO la etiqueta "<a" hace la acción de navegar hacia otra pantalla en este caso asi: "<a (href="#/usuarios" */}
+                <a
+                    href="#/usuarios"
+                    className="inline-block rounded bg-[#6c757d] px-3 py-1.5 text-xs font-semibold text-white hover:bg-[#5a6268]">
+                    Volver a la Lista de Usuarios
+                </a>
             </div>
         </div>
     );

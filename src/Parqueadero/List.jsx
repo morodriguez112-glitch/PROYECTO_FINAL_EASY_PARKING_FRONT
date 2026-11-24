@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 
-// Componente para listar los parqueaderos de Easy Parking
+// Componente para listar los parqueaderos
 function ListaParqueaderos() {
-    // Estado donde guardamos la lista de parqueaderos que llega del backend (Spring Boot)
+    // Aca es la lista de parqueaderos que llega del backend (Spring Boot)
     const [parqueaderos, setParqueaderos] = useState([]);
-    // Estado para mostrar un mensaje mientras carga o si ocurre un error de conexión
+    // aca es para mostrar un mensaje mientras carga o si ocurre un error de conexión
     const [cargando, setCargando] = useState(true);
 
     // useEffect se ejecuta automáticamente cuando aparece en pantalla
     useEffect(() => {
-        // Llamamos al endpoint REST de tu backend en Spring Boot (ajusta la ruta si tu @RequestMapping es distinto)
+        // Llamamos al endpoint REST de tu backend en Spring Boot
         fetch("http://localhost:8080/api/parqueaderos")
             .then((respuesta) => {
                 if (!respuesta.ok) {

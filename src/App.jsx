@@ -16,6 +16,7 @@ import viteLogo from './assets/vite.svg'
 // Importamos el componente Form desde la carpeta de Usuarios
 import Form from "./Usuarios/Form.jsx";
 import List from "./Usuarios/List.jsx";
+import Recuperar from "./Usuarios/Recuperar.jsx";
 function App() {
   return (
       <div>

@@ -39,8 +39,7 @@ function Recuperar() {
                             type="button"
                             disabled={cargando}
                             onClick={() => setCargando(true)}
-                            className="w-full py-3 font-medium text-white bg-green-600 hover:bg-green-500 rounded-lg border-green-500 hover:shadow inline-flex space-x-2 items-center justify-center"
-                        >
+                            className="w-full py-3 font-medium text-white bg-[#1D4526] hover:bg-green-500 rounded-lg border-green-500 hover:shadow inline-flex space-x-2 items-center justify-center">
                             {/* En react los atributos con guion como stroke-width o stroke-linecap van en camelCase */}
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -66,8 +65,7 @@ function Recuperar() {
                             {/* Quitamos th:href de Thymeleaf porque aquí estamos en React */}
                             <a
                                 href="#"
-                                className="text-indigo-600 font-medium inline-flex space-x-1 items-center"
-                            >
+                                className="text-indigo-600 font-medium inline-flex space-x-1 items-center">
                                 <span>Registrarse ahora </span>
                                 <span>
                   <svg
@@ -76,17 +74,15 @@ function Recuperar() {
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
-                      strokeWidth="2"
-                  >
+                      strokeWidth="2">
                     <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                   </svg>
                 </span>
                             </a>
-                        </p>
+                            </p>
                     </div>
                 </form>
             </div>

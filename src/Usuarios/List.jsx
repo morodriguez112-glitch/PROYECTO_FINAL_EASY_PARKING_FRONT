@@ -101,7 +101,7 @@ function List() {
                 <td className="flex items-center gap-2">
                     <a
                         href="#/usuarios/form"
-                        className="inline-block rounded bg-[#1D4526] px-3 py-1.5 text-xs font-semibold text-white hover:bg-[#a7c957]">
+                        className="inline-block rounded bg-[#1D4526] px-3 py-1.5 text-xs font-semibold text-white hover:bg-green-500 rounded-lg">
                         Agregar Nuevo Usuario
                     </a>
                  </td>

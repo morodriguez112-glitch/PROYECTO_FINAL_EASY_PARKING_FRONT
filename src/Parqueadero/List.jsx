@@ -1,3 +1,5 @@
+//useState para crear o actualizar un estado q se ejecuta automáticamente cuando aparece en pantalla (por ejemplo
+// cuando le vaya a dar click en el botón de "Lista de Parqueaderos" sin useState, no cambia. react no lo "dibuja".
 import { useState, useEffect } from "react";
 
 // Componente para listar los parqueaderos
@@ -7,9 +9,9 @@ function ListaParqueaderos() {
     // aca es para mostrar un mensaje mientras carga o si ocurre un error de conexión
     const [cargando, setCargando] = useState(true);
 
-    // useEffect se ejecuta automáticamente cuando aparece en pantalla
+    // useEffect para pedir datos a las API, se ejecuta una sola vez al cargar la pantalla.
     useEffect(() => {
-        // Llamamos al endpoint REST de tu backend en Spring Boot
+        // Llamamos al endpoint REST (endpoint REST es la dirección URL específica dentro de mi API) backend en Spring Boot
         fetch("http://localhost:8080/api/parqueaderos")
             .then((respuesta) => {
                 if (!respuesta.ok) {
@@ -67,7 +69,7 @@ function ListaParqueaderos() {
                 <div className="mb-4 flex justify-end">
                     <a
                         href="/parqueaderos/formulario"
-                        className="inline-block rounded-lg bg-[#1e4d2b] px-4 py-2 text-sm font-semibold text-white hover:bg-[#163a20] transition"
+                        className="inline-block rounded-lg bg-[#1D4526] px-4 py-2 text-sm font-semibold text-white hover:bg-green-500 rounded-lg"
                     >
                         + Agregar Nuevo Parqueadero
                     </a>

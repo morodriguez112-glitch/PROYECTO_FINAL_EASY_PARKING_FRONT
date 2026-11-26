@@ -105,7 +105,7 @@ function Form() {
                             <td className="flex items-center gap-2">
                                 <button
                                     type="button"
-                                    className="rounded bg-[#1D4526] px-2.5 py-1 text-xs font-semibold text-white hover:bg-[#a7c957] cursor-pointer">
+                                    className="rounded bg-[#1D4526] px-2.5 py-1 text-xs font-semibold text-white hover:bg-green-500 rounded-lg">
                                     Guardar
                                 </button>
                             </td>
@@ -116,10 +116,11 @@ function Form() {
 
                 <br /> {/* recodar esto "salto de línea" */}
 
-                {/* RECODATORIO la etiqueta "<a" hace la acción de navegar hacia otra pantalla en este caso asi: "<a (href="#/usuarios" */}
+                {/* RECODATORIO la etiqueta "<a" hace la acción de navegar hacia otra pantalla dentro del front en este caso asi: "<a (href="#/usuarios"
+                cuando vaya a unir el front con el back, tendre que cambiar nuevamente a button */}
                 <a
                     href="#/usuarios"
-                    className="inline-block rounded bg-[#6c757d] px-3 py-1.5 text-xs font-semibold text-white hover:bg-[#5a6268]">
+                    className="inline-block rounded bg-green-500 rounded-lg px-3 py-1.5 text-xs font-semibold text-white hover:bg-[#1D4526]">
                     Volver a la Lista de Usuarios
                 </a>
             </div>

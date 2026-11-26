@@ -19,6 +19,7 @@ import Form from "./Usuarios/Form.jsx";
 import List from "./Usuarios/List.jsx";
 import Recuperar from "./Usuarios/Recuperar.jsx";
 import ListaParqueaderos from "./Parqueadero/List.jsx";
+import ParqueaderoForm from "./Parqueadero/Form.jsx";
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
     // ESTO ES SOLO LA FORMULA PARA HACER ENSAYO ENTRE LAS PANTALLAS DEL FRONT.
     // Cuando quiera mirar otra pantalla, por ejemplo "recuperar" solo le cambio el nombre a ese por el que este en ese momento.
 
-    const [ruta, setRuta] = useState(window.location.hash || "#/Parqueadero/List"); // 1. este es el primer paso para empezar a conectar la pantalla, en este caso el "useState(#/usuarios/nuevo)" es la ruta del botón de agregar nuevo usuario, dejamos de primeras el "window.location.hash" para que arranque según la URL que tenga el navegador. */}
+    const [ruta, setRuta] = useState(window.location.hash || "#/Parqueadero/Form"); // 1. este es el primer paso para empezar a conectar la pantalla, en este caso el "useState(#/usuarios/nuevo)" es la ruta del botón de agregar nuevo usuario, dejamos de primeras el "window.location.hash" para que arranque según la URL que tenga el navegador. */}
     useEffect(() => {
         // 2. Función que lee lo que quedó después del '#' en la URL y actualiza la ruta (la de usuarios/nuevo)
         const alCambiarHash = () => {
@@ -45,8 +46,8 @@ function App() {
     // El triple igual (===) pregunta si lo que hay en "ruta" es exactamente igual a "#/usuarios/form" (la ruta del botón Agregar Nuevo Usuario).
     // Si son iguales, muestra el componente Form. Si no, sigue bajando y muestra List.
     // if (ruta === "#/usuarios/form") {
-    if (ruta === "#/Parqueadero/List") {
-        return <ListaParqueaderos/>;
+    if (ruta === "#/Parqueadero/Form") {
+        return <ParqueaderoForm/>;
     }
 
     // ESTA FORMULA PARA ENSAYAR LAS PANTALLAS, SOLO CAMBIAR "list, form, ect" PARA VER CUAL SE MUESTRA EN EL NAVEGADOR
@@ -55,7 +56,7 @@ function App() {
       <div>
         {/* Esta etiqueta <List /> es la unica q se coloca y solo indica que en la pantalla se mostrará el formulario al usuario, así es la
          formula para ensayar y ver en el navegador*/}
-        <ListaParqueaderos/>
+        <ParqueaderoForm/>
       </div>
   );
 }
